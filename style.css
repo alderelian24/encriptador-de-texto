@@ -5,3 +5,13 @@
     --color-boton-encriptar: #0A3871;
     --color-boton-desencriptar: #D8DFE8;
 }
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 1200px) {
+
+}
