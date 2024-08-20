@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,8 @@
     --color-boton-encriptar: #0A3871;
     --color-boton-desencriptar: #D8DFE8;
     --color-texto-2: #FFFFFF;
+    --fuente-texto: 'Inter', sans-serif;
+    --fuente-texto-2:'Inter Black', sans-serif;
 }
 
 body {
@@ -26,15 +30,15 @@ body {
 }
 
 .contenido {
-    width: 100%;
+    width: 80%;
     padding: 5% 10%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 70px;
 }
 
 .contenido__instruccion {
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -55,6 +59,10 @@ body {
     font-size: 16px;
     border: none;
     box-shadow: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--fuente-texto);
+    font-size: 32px;
+    color: var(--color-boton-encriptar);
 }
 .boton__encriptar {
     background-color: var(--color-boton-encriptar);
@@ -72,6 +80,19 @@ body {
     width: 328px;
     height: 48px;
     border: solid 1px var(--color-boton-encriptar)
+}
+
+.contenido__resultado {
+    width: 400px;
+    height: 944px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    background: var(--color-texto-2);
+    border-radius: 32px;
+    border: solid 1px var(--color-borde);
+    justify-content: center;
 }
 @media (max-width: 1200px) {
 
