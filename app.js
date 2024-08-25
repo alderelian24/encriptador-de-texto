@@ -25,20 +25,35 @@ function desencriptar() {
 
 // Función para mostrar el resultado
 function mostrarResultado(texto) {
-    let resultadoDiv = document.querySelector('.contenido__resultado');
-    resultadoDiv.innerHTML = `
-        <textarea readonly id="resultado">${texto}</textarea>
-        <button onclick="copiarTexto()" class="boton__copiar">Copiar</button>
-    `;
+    let resultadoDiv = document.getElementById('resultado');
+    let imagenResultado = document.getElementById('imagen-resultado');
+    let textoResultado = document.getElementById('texto-resultado');
+    let textoEncriptado = document.getElementById('texto-encriptado');
+    let botonCopiar = document.getElementById('copiar');
+
+    if (texto) {
+        imagenResultado.style.display = 'none';
+        textoResultado.style.display = 'none';
+        textoEncriptado.style.display = 'block';
+        botonCopiar.style.display = 'block';
+        textoEncriptado.value = texto;
+    } else {
+        imagenResultado.style.display = 'block';
+        textoResultado.style.display = 'block';
+        textoEncriptado.style.display = 'none';
+        botonCopiar.style.display = 'none';
+    }
 }
 
 // Función para copiar el texto
 function copiarTexto() {
-    let resultado = document.getElementById('resultado');
-    resultado.select();
+    let textoEncriptado = document.getElementById('texto-encriptado');
+    textoEncriptado.select();
     document.execCommand('copy');
     alert('Texto copiado al portapapeles');
 }
+
+document.getElementById('copiar').addEventListener('click', copiarTexto);
 
 // Agrergar eventos a los botones
 document.getElementById('encriptar').addEventListener('click', encriptar);
