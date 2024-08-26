@@ -64,6 +64,12 @@ body {
     font-size: 32px;
     color: var(--color-boton-encriptar);
 }
+
+.contenido__parrafo {
+    color: var(--color-secundario-texto);
+    font-size: 12px;
+}
+
 .boton__encriptar {
     background-color: var(--color-boton-encriptar);
     color: var(--color-texto-2);
@@ -141,6 +147,13 @@ body {
     justify-content: center;
     text-align: center;
     line-height: 2.0;
+}
+
+.contenido__resultado__parrafo {
+    color: var(--color-texto);
+    font-family: var(--fuente-texto);
+    font-weight: bold;
+    font-size: 24px;
 }
 @media (max-width: 1200px) {
     .header {
