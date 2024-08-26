@@ -13,7 +13,7 @@
     <main class="contenido">
         <section class="contenido__instruccion">
             <textarea class="contenido__input" id="texto" placeholder="Escribe aquí tu texto"></textarea>
-            <p>Solo letras minúsculas y sin acentos</p>
+            <p class="contenido__parrafo">Solo letras minúsculas y sin acentos</p>
 
             <div class="contenido__botones">
                 <button onclick="" class="boton__encriptar" id="encriptar">Encriptar</button>
@@ -23,8 +23,8 @@
         <div class="contenido__resultado" id="resultado">
             <img src="./img/image 1.png" alt="resultado" id="imagen-resultado">
             <div id="texto-resultado">
-                <p>No se encontró ningún mensaje</p>
-                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                <p class="contenido__resultado__parrafo">No se encontró ningún mensaje</p>
+                <p class="contenido__resultado__mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
             <textarea id="texto-encriptado" readonly style="display: none;"></textarea>
             <button id="copiar" style="display: none;">Copiar</button>
