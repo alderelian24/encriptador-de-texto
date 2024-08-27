@@ -20,9 +20,6 @@
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
-    font-family: var(--fuente-texto);
-    width: 100%;
-    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -63,6 +60,11 @@ body {
     font-family: var(--fuente-texto);
     font-size: 32px;
     color: var(--color-boton-encriptar);
+}
+
+.contenido__advertencia {
+    display: flex;
+    gap: 10px;
 }
 
 .contenido__parrafo {
@@ -161,6 +163,17 @@ body {
     font-family: var(--fuente-texto);
     font-size: 16px;
 }
+
+.footer {
+    color: var(--color-texto-2);
+    background: var(--color-secundario-texto);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fuente-texto);
+    font-size: 1.5rem;
+    font-weight: 400px;
+    
+}
 @media (max-width: 1200px) {
     .header {
         padding: 5% 0% 0% 2%;
@@ -178,6 +191,7 @@ body {
     .contenido__resultado {
         height: auto;
         width: 100%;
+        padding: 5% 0% 5% 0%;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         img {
             display: none;
@@ -190,7 +204,7 @@ body {
     }
 
     #copiar {
-        margin-bottom: 20px;
+        margin-bottom: 0%;
     }
 
     
